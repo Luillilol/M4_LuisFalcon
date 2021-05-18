@@ -1,0 +1,9 @@
+Sitio web de reservación y venta de viajes.
+
+1. La primera vista quiero que se muestre el header con el navegador horizonalmente, también una barra para explorar las distintas opciones de vuelo.
+	Aparte, también quiero un nav. donde se en encuentre un buscador donde te permita programar y configurar tu viaje, con origen, destino, tipo de viaje y reservaciones.
+
+2. En la segunda vista quiero que se muestren recomendaciones y ofertas de los vuelos más demandados o populares que hay, serán aprox. 3 secciones, una de lugares destacados, otra de viajes destacados, y la última de hoteles destacados.
+
+3. En la tercera vista quiero un footer donde se encuentre: redes sociales y formas de contacto, aparte de un pequeño texto donde se describa los datos de la pagina.
+ 
