@@ -1,0 +1,130 @@
+    /* =STRUCTURE AND GENERAL
+    ---------------------------------------------------- */
+    body{
+        margin: 0;
+        font-family: sans-serif;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    h4{
+        font-size: 1.8rem;
+    }
+    h5{
+        font-size: 1.5rem;
+    }
+    /* =NAV
+    -------------------------------------------------- */
+    #nav a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+    }
+    #nav{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;       
+        background-color: rebeccapurple;
+    }
+    #nav div{
+        cursor: pointer;
+        height: 50px;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        align-items: center;
+    }
+    #nav div:hover{
+        background-color: rgb(150, 92, 208);
+    }
+    /* =FIRST BANNER
+    ----------------------------------------------------- */
+    #firstBanner{
+        display: grid;
+        background: linear-gradient(180deg, rgba(135,34,181,1) 1%, rgba(87,84,188,1) 57%);     
+        height: 600px;
+        width: 100%;        
+        grid-template-columns: 15% 10% 10% 10% 10% 10% 10% 10% 15%;
+        grid-template-rows: 12% 12% 25% 12% 12% 27%;
+        
+    }
+    #firstBanner div:nth-child(1){
+        width: 100%;
+        height: 100%;
+        background-image:url("./img/blue.jpg");
+        background-repeat: no-repeat ;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 4;
+       
+    
+
+    }
+    #firstBanner div:nth-child(2){
+        width: 100%;
+        height: 100%;
+        background-image:url("./img/gato.jpg");
+        background-repeat: no-repeat ;
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 7;
+        grid-column-end: 10;  
+    }
+    #firstBanner div:nth-child(3){
+        color: black;
+        padding: 10%;
+        box-sizing: border-box;
+        padding-left: 30%;
+        width: 100%;
+        height: 100%;
+        background: white;  
+        grid-row-start: 1;
+        grid-row-end: 6;
+        grid-column-start: 4;
+        grid-column-end: 8;  
+    }
+    #firstBanner img{
+        width: 100%;
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 3;
+        grid-column-end: 5;  
+    }
+    /* =FEATURES
+    -----------------------------------------------*/
+    #features{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #features div{
+        text-align: center;
+        width: 300px;
+        margin: 2%;
+        padding: 2%;
+        box-sizing: border-box;
+        border: 5px solid black;
+    }
+    #features div:nth-child(1){
+        background-image: url(./img/foto1.jpg);
+        order: 4;
+    }
+    #features div:nth-child(2){
+        background-image: url(./img/foto2.jpg);
+        order: 1;
+    }
+    #features div:nth-child(3){
+        background-image: url(./img/foto3.jpg);
+        order: 2;
+    }
+    #features div:nth-child(4){
+        background-image: url(./img/foto4.jpg);
+        order: 3;
+    }
+    #features div{
+        background-size:cover ;
+        filter: brightness(0.9);
+        color: white;
+    }
