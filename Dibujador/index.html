@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dibujador.css">
+
+
+    <title>Dibujador 3000</title>
+</head>
+<body>
+    
+    <div id="base">
+        <canvas id="canvas" width="600px" height="600px"></canvas> 
+        <div id="dibujo"></div>
+        
+        <div id="preguntas">
+           
+            <strong id="text_color">Color de fondo</strong> <input type="color" id="color">
+            <strong id="text_color2">Color de fondo</strong> <input type="color" id="color2">
+            <strong id="text_fondo">Tipo de color de fondo</strong> 
+            <select name="tipoDeFondo" id="tipoDeFondo">
+                <option value="solido">Sólido</option>
+                <option value="lineal">Degradado lineal</option>
+                <option value="circular">Degradado radial</option>
+            </select>
+            <strong id="figura_text">Figura</strong>
+            <select name="tipo_figura" id="tipo_figura">
+                <option value="mickey">Mickey Mouse</option>
+                <option value="estrella">Estrella</option>
+                <option value="cruz">Cruz</option>
+            </select>
+            <div id="dibujarBoton"><strong>Dibujar</strong></div>
+       
+            
+        </div>
+    </div>
+<script src="./dibujador.js"></script>  
+</body>
+</html>

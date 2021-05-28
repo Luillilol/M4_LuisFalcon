@@ -1,0 +1,91 @@
+body{
+    background-color: aqua;
+}
+
+#base{
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    border: solid 1px black;
+    background-color: white;
+    top: 10%;
+    left: 20%;
+}
+/* =INPUTS
+----------------------------------------------------------------------------*/
+#dibujo{
+    position: absolute;
+    background-color: teal;
+    width: 500px;
+    height: 590px;
+    left: 5px;
+    top: 5px;
+}
+#preguntas{
+    position: absolute;
+    background-color: rgb(217, 255, 0);
+    width: 375px;
+    height: 590px;
+    left: 57%;
+    top: 5px;
+}
+#text_color, #color{
+    position: absolute;
+    font-size: 120%;
+    left: 10%;
+    top: 20px;
+}
+#color{
+    left: 45%;
+}
+#text_color2, #color2{
+    position: absolute;
+    font-size: 120%;
+    left: 10%;
+    top: 60px;
+    display: none;
+}
+#color2{
+    left: 45%;
+}
+
+#text_fondo{
+    position: absolute;
+    font-size: 120%;
+    left: 10%;
+    top: 20%;
+}
+#tipoDeFondo{
+    position: relative;
+    left: 10%;
+    top: 25%;
+}
+#figura_text{
+    position: relative;
+    font-size: 120%;
+    left: -25%;
+    top: 32%;
+}
+#dibujarBoton{
+    position: relative;
+    background-color: aqua;
+    border: solid 2px rgb(16, 0, 241);
+    width: 60px;
+    left: 10%;
+    top: 50%;
+}
+#dibujarBoton:hover{
+    cursor: pointer;
+}
+#tipo_figura{
+    position: relative;
+    left: -40%;
+    top: 38%;
+}
+#canvas{
+    position: relative;
+    bottom: 10%;
+    right: 15%;
+    z-index: 2;
+}
+
