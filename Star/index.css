@@ -1,0 +1,195 @@
+/* =STRUCTURE
+------------------------------------ */
+body{
+    margin: 0;
+    font-family:sans-serif;
+    background: rgb(42, 42, 42);
+}
+
+/* =NAV
+-------------------------- */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    height: 50px;
+    display: flex;
+}
+.barraN{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+}
+.navbar > div:hover{
+    background-color: rgb(88, 88, 88);
+}
+.navbar a, #navbar a:is(:visited, :focus,:link){
+    color: white;
+    text-decoration: none;
+}
+.navbar > div:first-child{
+    display: block;
+    color: white;
+}
+/* =CARD GENERAL
+------------------------ */
+#cont{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 400px;
+}
+.card > div:nth-child(1){
+    width: 50%;
+    padding:5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.card button{
+    border: none;
+    border-radius: 15px;
+    font-size: .9rem;
+    align-self: flex-end;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.card button:focus{
+    outline: none;
+}
+.card > div:nth-child(2){
+    border-radius: 50% 0% 0% 50%;
+    border-left: 10px solid white;
+    align-self: center;
+    width: 50%;
+    height: 100%;
+    background-size:cover;
+}
+
+/* =NABOO
+--------------------------- */
+#naboo{
+    background-color: rgb(42, 174, 106);
+    color: rgb(238, 253, 232);
+}
+#naboo > div:nth-child(2){
+    background-image: url(./img/nabooCompu.gif);
+}
+#naboo button{
+    color: white;
+    background-color:rgb(145, 224, 133) ;
+}    
+#naboo button:hover{
+    background-color:rgb(111, 206, 149) ;
+}   
+
+/* =TATOOINE
+--------------------------------------------- */
+#tatooine{
+    background-color: rgb(226, 133, 57);
+    color: rgb(238, 253, 232);
+}
+#tatooine > div:nth-child(2){
+    background-image: url(./img/tatooineCompu.jpg);
+}
+#tatooine button{
+    color: white;
+    background-color:rgb(243, 193, 147) ;
+}    
+#tatooine button:hover{
+    background-color:rgb(223, 186, 107) ;
+}
+
+/* =DAGOBAH
+--------------------------------------------- */
+#dagobah{
+    background-color: rgb(80, 133, 238);
+    color: rgb(238, 253, 232);
+}
+#dagobah > div:nth-child(2) {
+    background-image: url(./img/dagobahCompu.gif);
+}
+
+#dagobah button{
+    color: white;
+    background-color:rgb(92, 194, 209) ;
+}    
+#dagobah button:hover{
+    background-color:rgb(79, 164, 201) ;
+}
+
+/*= GEONOSIS
+---------------------------------------------- */
+#geonosis{
+    background-color: rgb(238, 85, 80);
+    color: rgb(238, 253, 232);
+}
+#geonosis > div:nth-child(2){
+    background-image: url(./img/geonosisCompu.jpg);
+}
+#geonosis button{
+    color: white;
+    background-color:rgb(226, 150, 140) ;
+}    
+#geonosis button:hover{
+    background-color:rgb(243, 117, 97) ;
+}
+
+/*  = MEDIA QUERIES
+-------------------------------------------------------------------------*/
+.imagen{
+    display: block;
+}
+#imgNaboo, #imgTatooine, #imgDagobah, #imgGeonosis{
+    display: none;
+}
+@media screen and (max-width: 1200px){
+    #cont{
+        flex-direction: column;
+        align-items: center;
+    }
+    #naboo, #tatooine, #dagobah, #geonosis{
+        width: 70%;    
+        height: 400px;    
+    }
+    #textNaboo, #textTattoine, #textDagobah, #textGeonosis{
+        display: none;
+    }
+    #geonosis > div:nth-child(2), #dagobah > div:nth-child(2), #tatooine > div:nth-child(2), #naboo > div:nth-child(2){
+        display: none;
+    }
+     #nabooBoton,  #tatooineBoton,  #dagobahBoton,  #geonosisBoton{
+        position: relative;
+        text-align: center;
+        top: 20%;
+    }
+    #nabooH1 , #tatooineH1, #dagobahH1, #geonosisH1{
+        position: relative;
+        text-align: center;
+        top: 60%;
+    }
+    #imgNaboo, #imgTatooine, #imgDagobah, #imgGeonosis{
+        display: block;
+        position: relative;
+        left: 20%;
+        top: -20%;
+    }
+    
+    /*.navbar > div:first-child(3){
+        display: none;
+    }*/
+
+}
+
